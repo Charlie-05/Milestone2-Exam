@@ -16,6 +16,7 @@ namespace BikeRentalManagementSystem
             this.Model = model;
             this.RentalPrice = rentalPrice;
         }
+        public Bike() { }   
         public int BikeId { get; set; }
         public string Brand { get; set; }
         public string Model { get; set; }
