@@ -105,7 +105,6 @@ namespace BikeRentalManagementSystem
             decimal init = 0;
             while (true)
             {
-
                 Console.WriteLine("Enter the Rental Price");
                 var RentalPrice = decimal.Parse(Console.ReadLine());
                 if (RentalPrice > 0)
