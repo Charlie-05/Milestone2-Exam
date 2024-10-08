@@ -1,0 +1,7 @@
+X:\Exam2\BikeRentalManagementSystem\BikeRentalManagementSystem\bin\Debug\BikeRentalManagementSystem.exe.config
+X:\Exam2\BikeRentalManagementSystem\BikeRentalManagementSystem\bin\Debug\BikeRentalManagementSystem.exe
+X:\Exam2\BikeRentalManagementSystem\BikeRentalManagementSystem\bin\Debug\BikeRentalManagementSystem.pdb
+X:\Exam2\BikeRentalManagementSystem\BikeRentalManagementSystem\obj\Debug\BikeRentalManagementSystem.csproj.AssemblyReference.cache
+X:\Exam2\BikeRentalManagementSystem\BikeRentalManagementSystem\obj\Debug\BikeRentalManagementSystem.csproj.CoreCompileInputs.cache
+X:\Exam2\BikeRentalManagementSystem\BikeRentalManagementSystem\obj\Debug\BikeRentalManagementSystem.exe
+X:\Exam2\BikeRentalManagementSystem\BikeRentalManagementSystem\obj\Debug\BikeRentalManagementSystem.pdb
