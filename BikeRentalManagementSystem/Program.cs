@@ -18,25 +18,6 @@ namespace BikeRentalManagementSystem
         {
             var bike = new Bike(1, "Yamaha", "FZ", 200);
             Console.WriteLine(bike.ToString());
-
-            //var manager = new BikeManager();
-            //manager.CreateBike(bike);
-            //manager.ReadBikes();
-            //Console.WriteLine("Enter the bike ID to be Updated");
-            //var BikeId = int.Parse(Console.ReadLine());
-            //Console.WriteLine("Enter the New Brand");
-            //var NBrand = Console.ReadLine();
-            //Console.WriteLine("Enter the New Model");
-            //var NModel = Console.ReadLine();
-            //Console.WriteLine("Enter the New Rental Price");
-            //var NRentalPrice = decimal.Parse(Console.ReadLine());
-            //var Nbike = new Bike
-            //{
-            //    Brand = NBrand,
-            //    Model = NModel,
-            //    RentalPrice = NRentalPrice
-            //};
-            //manager.UpdateBike(BikeId, Nbike);
             var manager = new BikeManager();
             
             while (true)
@@ -51,22 +32,22 @@ namespace BikeRentalManagementSystem
                 Console.WriteLine("5.Exit");
                 Console.Write("Choose an Option : ");
 
-                var MenuInput = int.Parse(Console.ReadLine());
+                var MenuInput = Console.ReadLine();
                 switch (MenuInput)
                 {   
-                    case 1:
+                    case "1":
                         manager.CreateBike();
                         break;
-                    case 2:
+                    case "2":
                         manager.ReadBikes();
                         break;
-                    case 3:
+                    case "3":
                         manager.UpdateBike();
                         break;
-                    case 4:
+                    case "4":
                         manager.DeleteBike();
                         break;
-                    case 5:
+                    case "5":
                         Console.WriteLine("Thank You!!!");
                         return;
                     default:
@@ -77,6 +58,8 @@ namespace BikeRentalManagementSystem
                 }
             }
         }
+
+       
 
     }
 }

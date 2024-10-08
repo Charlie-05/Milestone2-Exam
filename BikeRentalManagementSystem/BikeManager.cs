@@ -25,20 +25,24 @@ namespace BikeRentalManagementSystem
             var Brand = Console.ReadLine();
             Console.WriteLine("Enter the Model");
             var Model = Console.ReadLine();
-            Console.WriteLine("Enter the Rental Price");
-            var RentalPrice = decimal.Parse(Console.ReadLine());
-            var Bike = new Bike()
+            var RentalPrice = ValidateBikeRentalPrice();
+            var bike = new Bike()
             {
                 BikeId = BikeId,
                 Brand = Brand,
                 Model = Model,
                 RentalPrice = RentalPrice
             };
-            this.BikesList.Add(Bike);
+            
+            this.BikesList.Add(bike);
             Console.WriteLine("Added Successfully");
+
+
+
         }
         public void ReadBikes()
-        {   if(BikesList.Count > 0)
+        {
+            if (BikesList.Count > 0)
             {
                 foreach (var item in BikesList)
                 {
@@ -49,7 +53,7 @@ namespace BikeRentalManagementSystem
             {
                 Console.WriteLine("No bikes available");
             }
-            
+
         }
 
         public void UpdateBike()
@@ -58,20 +62,22 @@ namespace BikeRentalManagementSystem
             var BikeId = int.Parse(Console.ReadLine());
             var findBike = this.BikesList.Where(b => b.BikeId == BikeId).FirstOrDefault();
             if (findBike != null)
-            {   this.BikesList.Remove(findBike);
+            {
+                this.BikesList.Remove(findBike);
                 Console.WriteLine("Enter the New Brand");
                 var NBrand = Console.ReadLine();
                 Console.WriteLine("Enter the New Model");
                 var NModel = Console.ReadLine();
-                Console.WriteLine("Enter the New Rental Price");
-                var NRentalPrice = decimal.Parse(Console.ReadLine());
+                var RentalPrice = ValidateBikeRentalPrice();
                 var Nbike = new Bike
-                {   BikeId = BikeId,
+                {
+                    BikeId = BikeId,
                     Brand = NBrand,
                     Model = NModel,
-                    RentalPrice = NRentalPrice
+                    RentalPrice=RentalPrice
                 };
                 this.BikesList.Add(Nbike);
+                Console.WriteLine("Bike Updated Successfully");
             }
             else
             {
@@ -92,6 +98,24 @@ namespace BikeRentalManagementSystem
             {
                 Console.WriteLine("Invalid Id");
             }
+        }
+
+        public decimal ValidateBikeRentalPrice()
+        {
+            decimal init = 0;
+            while (true)
+            {
+
+                Console.WriteLine("Enter the Rental Price");
+                var RentalPrice = decimal.Parse(Console.ReadLine());
+                if (RentalPrice > 0)
+                {
+                    init = RentalPrice;
+                    break;
+                }
+                Console.WriteLine("Invalid");
+            }
+            return init;
         }
 
     }
