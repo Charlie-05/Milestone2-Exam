@@ -17,43 +17,72 @@ namespace BikeRentalManagementSystem
         }
         public List<Bike> BikesList;
 
-        public void CreateBike(Bike bike)
+        public void CreateBike()
         {
-            this.BikesList.Add(bike);
+            Console.WriteLine("Enter the bike ID ");
+            var BikeId = int.Parse(Console.ReadLine());
+            Console.WriteLine("Enter the Brand");
+            var Brand = Console.ReadLine();
+            Console.WriteLine("Enter the Model");
+            var Model = Console.ReadLine();
+            Console.WriteLine("Enter the Rental Price");
+            var RentalPrice = decimal.Parse(Console.ReadLine());
+            var Bike = new Bike()
+            {
+                BikeId = BikeId,
+                Brand = Brand,
+                Model = Model,
+                RentalPrice = RentalPrice
+            };
+            this.BikesList.Add(Bike);
             Console.WriteLine("Added Successfully");
         }
         public void ReadBikes()
-        {
-            foreach (var item in BikesList)
+        {   if(BikesList.Count > 0)
             {
-                Console.WriteLine(item);
+                foreach (var item in BikesList)
+                {
+                    Console.WriteLine(item);
+                }
             }
+            else
+            {
+                Console.WriteLine("No bikes available");
+            }
+            
         }
 
-        public void UpdateBike(int bikeId, Bike bike)
+        public void UpdateBike()
         {
-            var findBike = this.BikesList.Where(b => b.BikeId == bikeId).FirstOrDefault();
+            Console.WriteLine("Enter the bike ID to be Updated");
+            var BikeId = int.Parse(Console.ReadLine());
+            var findBike = this.BikesList.Where(b => b.BikeId == BikeId).FirstOrDefault();
             if (findBike != null)
-            {
-                this.BikesList.Remove(findBike);
-                var addBike = new Bike();
-                addBike.BikeId = bikeId;
-                addBike.Brand = bike.Brand;
-                addBike.Model = bike.Model;
-                addBike.RentalPrice = bike.RentalPrice;
-                this.CreateBike(addBike);
-                Console.WriteLine("Successfully updated");
-                this.ReadBikes();
-
+            {   this.BikesList.Remove(findBike);
+                Console.WriteLine("Enter the New Brand");
+                var NBrand = Console.ReadLine();
+                Console.WriteLine("Enter the New Model");
+                var NModel = Console.ReadLine();
+                Console.WriteLine("Enter the New Rental Price");
+                var NRentalPrice = decimal.Parse(Console.ReadLine());
+                var Nbike = new Bike
+                {   BikeId = BikeId,
+                    Brand = NBrand,
+                    Model = NModel,
+                    RentalPrice = NRentalPrice
+                };
+                this.BikesList.Add(Nbike);
             }
             else
             {
                 Console.WriteLine("Invalid Id");
             }
         }
-        public void DeleteBike(int bikeId)
+        public void DeleteBike()
         {
-            var findBike = this.BikesList.Where(b => b.BikeId == bikeId).FirstOrDefault();
+            Console.WriteLine("Enter the bike ID to be Updated");
+            var BikeId = int.Parse(Console.ReadLine());
+            var findBike = this.BikesList.Where(b => b.BikeId == BikeId).FirstOrDefault();
             if (findBike != null)
             {
                 this.BikesList.Remove(findBike);
