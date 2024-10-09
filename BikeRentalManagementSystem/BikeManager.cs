@@ -14,13 +14,15 @@ namespace BikeRentalManagementSystem
         public BikeManager()
         {
             BikesList = new List<Bike>();
+            bikeRepository = new BikeRepository();
+
         }
         public List<Bike> BikesList;
-
+        public BikeRepository bikeRepository;
         public void CreateBike()
         {
-            Console.WriteLine("Enter the bike ID ");
-            var BikeId = int.Parse(Console.ReadLine());
+            //Console.WriteLine("Enter the bike ID ");
+            //var BikeId = int.Parse(Console.ReadLine());
             Console.WriteLine("Enter the Brand");
             var Brand = Console.ReadLine();
             Console.WriteLine("Enter the Model");
@@ -28,42 +30,30 @@ namespace BikeRentalManagementSystem
             var RentalPrice = ValidateBikeRentalPrice();
             var bike = new Bike()
             {
-                BikeId = BikeId,
                 Brand = Brand,
                 Model = Model,
                 RentalPrice = RentalPrice
             };
-            
-            this.BikesList.Add(bike);
+
+            // this.BikesList.Add(bike);
+            bikeRepository.AddBike(bike);
             Console.WriteLine("Added Successfully");
-
-
 
         }
         public void ReadBikes()
         {
-            if (BikesList.Count > 0)
-            {
-                foreach (var item in BikesList)
-                {
-                    Console.WriteLine(item);
-                }
-            }
-            else
-            {
-                Console.WriteLine("No bikes available");
-            }
-
+            var data = bikeRepository.GetAllBikes();
+            Console.WriteLine(data);
         }
 
         public void UpdateBike()
         {
             Console.WriteLine("Enter the bike ID to be Updated");
             var BikeId = int.Parse(Console.ReadLine());
-            var findBike = this.BikesList.Where(b => b.BikeId == BikeId).FirstOrDefault();
+            //var findBike = this.BikesList.Where(b => b.BikeId == BikeId).FirstOrDefault();
+            var findBike = bikeRepository.GetBikeByID(BikeId);
             if (findBike != null)
             {
-                this.BikesList.Remove(findBike);
                 Console.WriteLine("Enter the New Brand");
                 var NBrand = Console.ReadLine();
                 Console.WriteLine("Enter the New Model");
@@ -74,10 +64,10 @@ namespace BikeRentalManagementSystem
                     BikeId = BikeId,
                     Brand = NBrand,
                     Model = NModel,
-                    RentalPrice=RentalPrice
+                    RentalPrice = RentalPrice
                 };
-                this.BikesList.Add(Nbike);
-                Console.WriteLine("Bike Updated Successfully");
+                // this.BikesList.Add(Nbike);
+                bikeRepository.UpdateBike(Nbike);
             }
             else
             {
@@ -86,13 +76,13 @@ namespace BikeRentalManagementSystem
         }
         public void DeleteBike()
         {
-            Console.WriteLine("Enter the bike ID to be Updated");
+            Console.WriteLine("Enter the bike ID to be Deleted");
             var BikeId = int.Parse(Console.ReadLine());
-            var findBike = this.BikesList.Where(b => b.BikeId == BikeId).FirstOrDefault();
+            // var findBike = this.BikesList.Where(b => b.BikeId == BikeId).FirstOrDefault();
+            var findBike = bikeRepository.GetBikeByID(BikeId);
             if (findBike != null)
             {
-                this.BikesList.Remove(findBike);
-                Console.WriteLine("Successfully Deleted");
+                bikeRepository.DeleteBike(BikeId);
             }
             else
             {
@@ -100,6 +90,13 @@ namespace BikeRentalManagementSystem
             }
         }
 
+        public void GetBikeByID()
+        {
+            Console.WriteLine("Enter the BikeID ");
+            int bikeId = int.Parse(Console.ReadLine());
+            var data = bikeRepository.GetBikeByID(bikeId);
+            Console.WriteLine(data);
+        }
         public decimal ValidateBikeRentalPrice()
         {
             decimal init = 0;

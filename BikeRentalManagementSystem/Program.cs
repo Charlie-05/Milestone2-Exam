@@ -8,6 +8,7 @@ namespace BikeRentalManagementSystem
 {
     internal class Program
     {
+
         static void Main(string[] args)
         {
             Menu();
@@ -19,7 +20,7 @@ namespace BikeRentalManagementSystem
             var bike = new Bike(1, "Yamaha", "FZ", 200);
             Console.WriteLine(bike.ToString());
             var manager = new BikeManager();
-            
+
             while (true)
             {
                 Console.WriteLine("----------------------------------------------");
@@ -34,7 +35,7 @@ namespace BikeRentalManagementSystem
 
                 var MenuInput = Console.ReadLine();
                 switch (MenuInput)
-                {   
+                {
                     case "1":
                         manager.CreateBike();
                         break;
@@ -50,16 +51,21 @@ namespace BikeRentalManagementSystem
                     case "5":
                         Console.WriteLine("Thank You!!!");
                         return;
+                    case "6":
+                        manager.GetBikeByID();
+                        break;
                     default:
                         Console.Clear();
                         Menu();
                         break;
-                    
+
                 }
             }
         }
 
-       
+
 
     }
+
+
 }

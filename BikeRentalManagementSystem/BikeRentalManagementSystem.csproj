@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="Bike.cs" />
     <Compile Include="BikeManager.cs" />
+    <Compile Include="BikeRepository.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
