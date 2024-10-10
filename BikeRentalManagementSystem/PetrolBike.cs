@@ -10,16 +10,14 @@ namespace BikeRentalManagementSystem
     {
         public string FuelTankCapacity {   get; set; }
         public string EngineCapacity { get; set; }  
-         public PetrolBike() { }
-        public PetrolBike(string fuelTankCapacity, string engineCapacity) : base()
+       
+        public PetrolBike() : base()
         {
-            FuelTankCapacity = fuelTankCapacity;
-            EngineCapacity = engineCapacity;
         }
 
         public string DisplayPetrolBikeInfo()
         {
-            return $"{this.BikeId} {this.Brand}, {this.Model} {this.RentalPrice} {this.FuelTankCapacity} {this.EngineCapacity}";
+            return $"{base.DisplayBikeInfo()} ,FuelTankCapacity{FuelTankCapacity} , EngineCapacity{EngineCapacity}";
         }
 
         public override string DisplayBikeInfo()

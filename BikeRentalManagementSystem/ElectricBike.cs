@@ -11,6 +11,7 @@ namespace BikeRentalManagementSystem
         public string BatteryCapacity { get; set; } 
         public string MotorPower { get; set; }
 
+        public ElectricBike() : base() { }
         public string DisplayElectricBikeInfo()
         {
             return $"{this.BikeId} {this.Brand}, {this.Model} {this.RentalPrice} {this.BatteryCapacity} {this.MotorPower}";
@@ -18,7 +19,7 @@ namespace BikeRentalManagementSystem
 
         public override string DisplayBikeInfo()
         {
-            return($"Bike ID:{BikeId}, Bike Brand:{Brand}, Bike Model :{Model}, Rental Price :{RentalPrice},BatteryCapacity {BatteryCapacity}, MotorPower {MotorPower}");
+            return $"{ base.DisplayBikeInfo()},BatteryCapacity {BatteryCapacity}, MotorPower {MotorPower}";
         }
     }
 }
