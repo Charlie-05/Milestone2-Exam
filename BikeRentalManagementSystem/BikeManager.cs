@@ -24,7 +24,8 @@ namespace BikeRentalManagementSystem
             //Console.WriteLine("Enter the bike ID ");
             //var BikeId = int.Parse(Console.ReadLine());
             Console.WriteLine("Enter the Brand");
-            var Brand = Console.ReadLine();
+            var input = Console.ReadLine();
+            var Brand = CapitalizeTitle(input);
             Console.WriteLine("Enter the Model");
             var Model = Console.ReadLine();
             var RentalPrice = ValidateBikeRentalPrice();
@@ -55,7 +56,8 @@ namespace BikeRentalManagementSystem
             if (findBike != null)
             {
                 Console.WriteLine("Enter the New Brand");
-                var NBrand = Console.ReadLine();
+                var input = Console.ReadLine();
+                var NBrand = CapitalizeTitle(input);
                 Console.WriteLine("Enter the New Model");
                 var NModel = Console.ReadLine();
                 var RentalPrice = ValidateBikeRentalPrice();
@@ -95,7 +97,15 @@ namespace BikeRentalManagementSystem
             Console.WriteLine("Enter the BikeID ");
             int bikeId = int.Parse(Console.ReadLine());
             var data = bikeRepository.GetBikeByID(bikeId);
-            Console.WriteLine(data);
+            if ((data !=null))
+            {
+                Console.WriteLine(data);
+            }
+            else
+            {
+
+            }
+            
         }
         public decimal ValidateBikeRentalPrice()
         {
@@ -112,6 +122,13 @@ namespace BikeRentalManagementSystem
                 Console.WriteLine("Invalid");
             }
             return init;
+        }
+
+        public string CapitalizeTitle(string str)
+        {
+            string firstLetter = str.Substring(0, 1);
+            string remaining = str.Substring(1,str.Length-1);
+            return $"{firstLetter.ToUpper()}{remaining}";
         }
 
     }

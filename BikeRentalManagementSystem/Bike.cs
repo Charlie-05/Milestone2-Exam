@@ -15,16 +15,27 @@ namespace BikeRentalManagementSystem
             this.Brand = brand;
             this.Model = model;
             this.RentalPrice = rentalPrice;
+            this.TotalCount++;
         }
-        public Bike() { }   
+        public Bike()
+        {
+            this.TotalCount++;
+        }
         public int BikeId { get; set; }
         public string Brand { get; set; }
         public string Model { get; set; }
         public decimal RentalPrice { get; set; }
 
+        public int TotalCount { get; set; }
+
         public override string ToString()
         {
             return $"Bike ID:{BikeId}, Bike Brand:{Brand}, Bike Model :{Model}, Rental Price :{RentalPrice}";
+        }
+
+        public virtual string DisplayBikeInfo()
+        {
+            return ($"Bike ID:{BikeId}, Bike Brand:{Brand}, Bike Model :{Model}, Rental Price :{RentalPrice}");
         }
 
     }

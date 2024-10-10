@@ -3,24 +3,28 @@
   "WorkspaceRootPath": "X:\\Exam2\\BikeRentalManagementSystem\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{5FCC2C04-9206-42D2-A3B6-135029AADDD9}|BikeRentalManagementSystem\\BikeRentalManagementSystem.csproj|X:\\Exam2\\BikeRentalManagementSystem\\bikerentalmanagementsystem\\bike.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FCC2C04-9206-42D2-A3B6-135029AADDD9}|BikeRentalManagementSystem\\BikeRentalManagementSystem.csproj|solutionrelative:bikerentalmanagementsystem\\bike.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5FCC2C04-9206-42D2-A3B6-135029AADDD9}|BikeRentalManagementSystem\\BikeRentalManagementSystem.csproj|X:\\Exam2\\BikeRentalManagementSystem\\bikerentalmanagementsystem\\bikemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5FCC2C04-9206-42D2-A3B6-135029AADDD9}|BikeRentalManagementSystem\\BikeRentalManagementSystem.csproj|solutionrelative:bikerentalmanagementsystem\\bikemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FCC2C04-9206-42D2-A3B6-135029AADDD9}|BikeRentalManagementSystem\\BikeRentalManagementSystem.csproj|X:\\Exam2\\BikeRentalManagementSystem\\bikerentalmanagementsystem\\petrolbike.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FCC2C04-9206-42D2-A3B6-135029AADDD9}|BikeRentalManagementSystem\\BikeRentalManagementSystem.csproj|solutionrelative:bikerentalmanagementsystem\\petrolbike.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5FCC2C04-9206-42D2-A3B6-135029AADDD9}|BikeRentalManagementSystem\\BikeRentalManagementSystem.csproj|x:\\exam2\\bikerentalmanagementsystem\\bikerentalmanagementsystem\\bikerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5FCC2C04-9206-42D2-A3B6-135029AADDD9}|BikeRentalManagementSystem\\BikeRentalManagementSystem.csproj|solutionrelative:bikerentalmanagementsystem\\bikerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5FCC2C04-9206-42D2-A3B6-135029AADDD9}|BikeRentalManagementSystem\\BikeRentalManagementSystem.csproj|x:\\exam2\\bikerentalmanagementsystem\\bikerentalmanagementsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5FCC2C04-9206-42D2-A3B6-135029AADDD9}|BikeRentalManagementSystem\\BikeRentalManagementSystem.csproj|X:\\Exam2\\BikeRentalManagementSystem\\bikerentalmanagementsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5FCC2C04-9206-42D2-A3B6-135029AADDD9}|BikeRentalManagementSystem\\BikeRentalManagementSystem.csproj|solutionrelative:bikerentalmanagementsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5FCC2C04-9206-42D2-A3B6-135029AADDD9}|BikeRentalManagementSystem\\BikeRentalManagementSystem.csproj|X:\\Exam2\\BikeRentalManagementSystem\\bikerentalmanagementsystem\\bike.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5FCC2C04-9206-42D2-A3B6-135029AADDD9}|BikeRentalManagementSystem\\BikeRentalManagementSystem.csproj|solutionrelative:bikerentalmanagementsystem\\bike.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5FCC2C04-9206-42D2-A3B6-135029AADDD9}|BikeRentalManagementSystem\\BikeRentalManagementSystem.csproj|x:\\exam2\\bikerentalmanagementsystem\\bikerentalmanagementsystem\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{5FCC2C04-9206-42D2-A3B6-135029AADDD9}|BikeRentalManagementSystem\\BikeRentalManagementSystem.csproj|solutionrelative:bikerentalmanagementsystem\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+      "AbsoluteMoniker": "D:0:0:{5FCC2C04-9206-42D2-A3B6-135029AADDD9}|BikeRentalManagementSystem\\BikeRentalManagementSystem.csproj|X:\\Exam2\\BikeRentalManagementSystem\\bikerentalmanagementsystem\\electricbike.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5FCC2C04-9206-42D2-A3B6-135029AADDD9}|BikeRentalManagementSystem\\BikeRentalManagementSystem.csproj|solutionrelative:bikerentalmanagementsystem\\electricbike.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,70 +34,81 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "X:\\Exam2\\BikeRentalManagementSystem\\BikeRentalManagementSystem\\Program.cs",
               "RelativeDocumentMoniker": "BikeRentalManagementSystem\\Program.cs",
               "ToolTip": "X:\\Exam2\\BikeRentalManagementSystem\\BikeRentalManagementSystem\\Program.cs",
               "RelativeToolTip": "BikeRentalManagementSystem\\Program.cs",
-              "ViewState": "AQIAABUAAAAAAAAAAAAowDcAAAAeAAAA",
+              "ViewState": "AQIAACUAAAAAAAAAAAAgwEEAAAA1AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-08T04:46:55.119Z",
-              "IsPinned": true,
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PetrolBike.cs",
+              "DocumentMoniker": "X:\\Exam2\\BikeRentalManagementSystem\\BikeRentalManagementSystem\\PetrolBike.cs",
+              "RelativeDocumentMoniker": "BikeRentalManagementSystem\\PetrolBike.cs",
+              "ToolTip": "X:\\Exam2\\BikeRentalManagementSystem\\BikeRentalManagementSystem\\PetrolBike.cs",
+              "RelativeToolTip": "BikeRentalManagementSystem\\PetrolBike.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABUAAACAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-09T10:19:30.13Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "App.config",
-              "DocumentMoniker": "X:\\Exam2\\BikeRentalManagementSystem\\BikeRentalManagementSystem\\App.config",
-              "RelativeDocumentMoniker": "BikeRentalManagementSystem\\App.config",
-              "ToolTip": "X:\\Exam2\\BikeRentalManagementSystem\\BikeRentalManagementSystem\\App.config",
-              "RelativeToolTip": "BikeRentalManagementSystem\\App.config",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2024-10-09T09:45:53.548Z",
-              "EditorCaption": ""
+              "DocumentIndex": 5,
+              "Title": "ElectricBike.cs",
+              "DocumentMoniker": "X:\\Exam2\\BikeRentalManagementSystem\\BikeRentalManagementSystem\\ElectricBike.cs",
+              "RelativeDocumentMoniker": "BikeRentalManagementSystem\\ElectricBike.cs",
+              "ToolTip": "X:\\Exam2\\BikeRentalManagementSystem\\BikeRentalManagementSystem\\ElectricBike.cs",
+              "RelativeToolTip": "BikeRentalManagementSystem\\ElectricBike.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAACaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-09T10:18:55.193Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "BikeRepository.cs",
               "DocumentMoniker": "X:\\Exam2\\BikeRentalManagementSystem\\BikeRentalManagementSystem\\BikeRepository.cs",
               "RelativeDocumentMoniker": "BikeRentalManagementSystem\\BikeRepository.cs",
               "ToolTip": "X:\\Exam2\\BikeRentalManagementSystem\\BikeRentalManagementSystem\\BikeRepository.cs",
               "RelativeToolTip": "BikeRentalManagementSystem\\BikeRepository.cs",
-              "ViewState": "AQIAAE0AAAAAAAAAAAAIwG8AAAA+AAAA",
+              "ViewState": "AQIAABMAAAAAAAAAAAAgwCwAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-09T06:32:35.019Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "BikeManager.cs",
               "DocumentMoniker": "X:\\Exam2\\BikeRentalManagementSystem\\BikeRentalManagementSystem\\BikeManager.cs",
               "RelativeDocumentMoniker": "BikeRentalManagementSystem\\BikeManager.cs",
               "ToolTip": "X:\\Exam2\\BikeRentalManagementSystem\\BikeRentalManagementSystem\\BikeManager.cs",
               "RelativeToolTip": "BikeRentalManagementSystem\\BikeManager.cs",
-              "ViewState": "AQIAADUAAAAAAAAAAAAwwE4AAAA+AAAA",
+              "ViewState": "AQIAAAsAAAAAAAAAAIAxwB8AAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-08T06:20:16.652Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "Bike.cs",
               "DocumentMoniker": "X:\\Exam2\\BikeRentalManagementSystem\\BikeRentalManagementSystem\\Bike.cs",
               "RelativeDocumentMoniker": "BikeRentalManagementSystem\\Bike.cs",
               "ToolTip": "X:\\Exam2\\BikeRentalManagementSystem\\BikeRentalManagementSystem\\Bike.cs",
               "RelativeToolTip": "BikeRentalManagementSystem\\Bike.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAQwBMAAAAnAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAqwBUAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-08T05:07:53.822Z",
               "EditorCaption": ""

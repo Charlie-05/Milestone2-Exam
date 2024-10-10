@@ -33,18 +33,19 @@ namespace BikeRentalManagementSystem
         {
             using (SqlConnection conn = new SqlConnection(ConnectionString))
             {
+                var data = "";
                 conn.Open();
                 string query = "select * from Bikes Where BikeId = @BikeId";
                 using (SqlCommand cmd = new SqlCommand(query, conn))
-                {
+                                  {
                     cmd.Parameters.AddWithValue("@BikeId", bikeId);
                     SqlDataReader reader = cmd.ExecuteReader();
                     while (reader.Read())
                     {
-                        return ($"Bike ID :{reader["BikeId"]} , Brand : {reader["Brand"]}, Model : {reader["Model"]}, Rental Price : {reader["rentalPrice"]}");
+                       data = ($"Bike ID :{reader["BikeId"]} , Brand : {reader["Brand"]}, Model : {reader["Model"]}, Rental Price : {reader["rentalPrice"]}");
                     }
-                    return null;
                 }
+                return data;
             }
         }
 

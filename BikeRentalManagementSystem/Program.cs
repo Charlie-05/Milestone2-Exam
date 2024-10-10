@@ -11,7 +11,41 @@ namespace BikeRentalManagementSystem
 
         static void Main(string[] args)
         {
-            Menu();
+             Menu();
+           
+
+            var PBike = new PetrolBike()
+            {
+                BikeId = 1,
+                Brand = "brand",
+                Model = "model",
+                RentalPrice = 200,
+                FuelTankCapacity = "100",
+                EngineCapacity = "100",
+            };
+           
+            Console.WriteLine(PBike.DisplayBikeInfo());
+
+            var Ebike = new ElectricBike()
+            {
+                BikeId = 1,
+                Brand = "brand",
+                Model = "model",
+                RentalPrice = 200M,
+                BatteryCapacity = "200",
+                MotorPower = "200",
+
+            };
+
+            Console.WriteLine(Ebike.DisplayBikeInfo());
+            var bike = new Bike()
+            {
+                BikeId = 1,
+                Brand = "brand",
+                Model = "model",
+                RentalPrice = 20
+            };
+            Console.WriteLine(bike.DisplayBikeInfo());  
             Console.ReadLine();
         }
 
